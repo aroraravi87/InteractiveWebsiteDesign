@@ -55,12 +55,21 @@ header{
     transform: translate(-50%,-50%);
 }
 
-.logo{
+.logo,
+.logo-black{
 
     height: 100px;
     width:auto;
     float: left;
     margin-top:20px;
+}
+.logo-black{
+    display: none;
+    height: 50px;
+    width:auto;
+    float: left;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 .main-nav{
@@ -96,6 +105,37 @@ header{
 .main-nav li a:active
 {
     border-bottom: 2px solid #e67e22;
+}
+
+/**/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgb(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    color: #555;
+    padding: 15px 0px;
+}
+
+.sticky .main-nav{
+    margin-top: 18px;
+}
+
+
+.sticky .logo-black{
+    display: block;
+}
+.sticky .logo{
+    display: none;
 }
 /* ----------------
 Headings
